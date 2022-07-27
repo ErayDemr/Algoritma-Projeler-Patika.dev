@@ -1,0 +1,18 @@
+#
+
+#[7,5,1,8,3,6,0,9,4,2]
+
+#Root = 7 olarak kabul ediyorum
+
+                  7
+                 / \
+                5   8       #Root = 5 ve 8  olarak kabul ediyorum
+               / \    \
+              1   6    9    #Root = 1,6 ve 9 olarak kabul ediyorum
+             / \
+            0   3           #Root = 0 ve 3  olarak kabul ediyorum
+               / \
+              2   4
+             
+ 
+ 
