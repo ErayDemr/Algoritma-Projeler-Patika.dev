@@ -1,0 +1,25 @@
+import  java.util.Scanner;
+
+public class ÖdevKdvHesaplanması {
+    public static void main(String[] args) {
+
+        double AnaPara,KdvliFiyat,KdvTutarı,kdv;
+        Boolean KdvOranı;
+
+        Scanner input=new Scanner(System.in);
+        System.out.print("Ana Parayı Griniz = ");
+        AnaPara = input.nextDouble();
+
+        KdvOranı = (0<AnaPara) && (AnaPara>1000);
+        kdv = KdvOranı ? 0.18 : 0.8;
+
+        System.out.println("Kdv'siz Tutar = "+AnaPara);
+
+        KdvliFiyat = (AnaPara*kdv)+AnaPara;
+        System.out.println("Kdv'li Tutar = "+KdvliFiyat);
+
+        KdvTutarı= KdvliFiyat-AnaPara;
+        System.out.println("Kdv Tutarı = "+KdvTutarı);
+
+    }
+}
