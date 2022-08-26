@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class ÜçgenAlanHesaplama {
+    public static void main(String[] args) {
+        double İlkKenar,İkinciKenar,UcuncuKenar;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("İlk Kenarı Giriniz = ");
+        İlkKenar = input.nextDouble();
+
+        System.out.print("İkinci Kenarı Giriniz = ");
+        İkinciKenar =input.nextDouble();
+
+        System.out.print("Üçüncü Kenarı Giriniz = ");
+        UcuncuKenar = input.nextDouble();
+
+        double cevre,alan;
+        cevre = (İlkKenar+İkinciKenar+UcuncuKenar)/2;
+
+        // (Alan)^2 = u*(𝑢 − 𝑎)* (𝑢 − 𝑏) * (𝑢 − 𝑐)
+
+        alan = Math.sqrt((cevre)*(cevre-İlkKenar)*(cevre-İkinciKenar)*(cevre-UcuncuKenar));
+        System.out.println("Değerlerini Girdiğiniz Üçgenin Alanı = "+alan);
+
+
+    }
+}
