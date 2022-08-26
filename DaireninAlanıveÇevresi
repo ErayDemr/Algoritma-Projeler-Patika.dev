@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class DaireninAlanıveÇevresi {
+    public static void main(String[] args) {
+        double pi=3.14,r,alan,cevre;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Dairenin YarıÇapını Griniz = ");
+        r = input.nextDouble();
+
+        alan = pi*r*r;
+        cevre = 2*pi*r;
+
+        System.out.println("YarıÇapını Girdiğiniz Dairenin Alanı = "+alan);
+        System.out.println("YarıÇapını Girdiğiniz Dairenin Çevresi = "+cevre);
+
+
+    }
+}
