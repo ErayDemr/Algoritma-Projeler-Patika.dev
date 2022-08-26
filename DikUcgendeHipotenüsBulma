@@ -1,0 +1,23 @@
+mport java.util.Scanner;
+
+public class ÜçgenHipotenüs {
+    public static void main(String[] args) {
+    
+        double İlkKenar,İkinciKenar,UzunKenar;
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("İlk Kenarın Uzunluğunu Griniz = ");
+        İlkKenar = input.nextDouble();
+
+        System.out.print("İkinci Kenarın Uzunluğnunu Giriniz = ");
+        İkinciKenar = input.nextDouble();
+
+        UzunKenar = Math.sqrt((İlkKenar*İlkKenar)+(İkinciKenar*İkinciKenar));  //Math.sqrt demek kare köküne al demek.Yardımcı Sistem.
+        System.out.println("UzunKenar = " + UzunKenar);
+
+
+
+
+    }
+
+}
