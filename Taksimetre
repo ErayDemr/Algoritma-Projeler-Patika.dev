@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class TksiMetre {
+    public static void main(String[] args) {
+    
+        double km, Tutar,KMBasina = 2.20,BaslangıcTutarı = 10;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Katettiğiniz Mesafeyi KM türünden giriniz = ");
+        km = input.nextDouble();
+
+        Tutar= (km*KMBasina)+BaslangıcTutarı;
+        Tutar = (Tutar<20) ? 20 : Tutar;  
+        System.out.println("Ödenecek Ücret = "+Tutar);
+        
+
+    }
+}
