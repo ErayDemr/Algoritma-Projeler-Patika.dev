@@ -1,0 +1,21 @@
+import  java.util.Scanner;
+
+public class DaireDilimAlanı {
+    public static void main(String[] args) {
+    
+        double r,pi=3.14,alfa,sigma,DaireDilimAlanı;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Dairenin Yarıçapını Giriniz = ");
+        r = input.nextDouble();
+
+        System.out.print("Dairenin Merkez Açı Ölçüsü (sigma)'yı Giriniz = ");
+        sigma = input.nextDouble();
+
+        DaireDilimAlanı = (pi*(r*r)*sigma)/360;
+
+        System.out.println("Girdiğiniz Verilere Göre M.A.Ö. Sigma Olan Dairenin Alanı = "+DaireDilimAlanı);
+
+    }
+}
