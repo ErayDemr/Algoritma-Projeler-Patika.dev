@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class ManavTutarı {
+    public static void main(String[] args) {
+
+        double Armut=2.14,Elma=3.67,Domates=1.11,Muz=0.95,Patlıcan=5.00,MüsElma,MüsArmut,MüsDomates,MüsMuz,MüsPatlıcan;
+
+        Scanner input=new Scanner(System.in);
+
+        System.out.print("Kaç Kilo Armut ? = ");
+        MüsArmut =input.nextDouble();
+
+        System.out.print("Kaç Kilo Elma ? = ");
+        MüsElma =input.nextDouble();
+
+        System.out.print("Kaç Kilo Domates ? = ");
+        MüsDomates =input.nextDouble();
+
+        System.out.print("Kaç Kilo Muz ? = ");
+        MüsMuz =input.nextDouble();
+
+        System.out.print("Kaç Kilo Patlıcan ? = ");
+        MüsPatlıcan =input.nextDouble();
+
+        double Total =(Armut*MüsArmut)+(Elma*MüsElma)+(Domates*MüsDomates)+(Muz*MüsMuz)+(Patlıcan*MüsPatlıcan);
+        System.out.println("Manav Alışverişinizin Toplam Tutarı = "+Total+" TL'dir");
+
+    }
+}
