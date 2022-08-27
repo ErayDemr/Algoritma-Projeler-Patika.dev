@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class VücutKitleEndeksi {
+    public static void main(String[] args) {
+
+        double Kilo,Boy, VKİ;
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Lütfen Boyunuzu -metre- Cinsinden Giriniz = ");
+        Boy = input.nextDouble();
+
+        System.out.print("Lütfen Kilonuzu -kg- Cinsinden Giriniz = ");
+        Kilo = input.nextDouble();
+
+        VKİ = (Kilo)/(Boy*Boy);
+        System.out.println("Vücut Kitle İndeksiniz = "+VKİ+" BMI. (30 BMI üstü obezite tehlikesi olduğunu unutma!!)");
+        
+    }
+}
