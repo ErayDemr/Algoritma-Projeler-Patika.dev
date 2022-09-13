@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class kullanicigirisi {
+    public static void main(String[] args) {
+        String username,password;
+
+        Scanner input=new Scanner(System.in);
+
+        System.out.print("Kullanıcı Adınızı Giriniz : ");
+        username = input.nextLine();
+
+        System.out.print("Şifrenizi Giriniz : ");
+        password = input.nextLine();
+
+        if (username.equals("thebeantw") && password.equals("eray3010") ){
+            System.out.println("Başarıyla Giriş Yaptınız");
+        }else {
+            System.out.println("Hatalı Bilgi Girişi. Tekrar Deneyiniz.");
+        }
+    }
+}
