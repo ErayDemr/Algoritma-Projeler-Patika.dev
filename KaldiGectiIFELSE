@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class DerstenGecmeKalmaIFELSE {
+    public static void main(String[] args) {
+
+        int mat,fizik,kimya,turkce,muzik;
+
+        Scanner input=new Scanner(System.in);
+
+        System.out.print("Matematik Notunuzu Giriniz : ");
+        mat = input.nextInt();
+
+        System.out.print("Fizik Notunuzu Giriniz : ");
+        fizik = input.nextInt();
+
+        System.out.print("Kimya Notunuzu Giriniz : ");
+        kimya = input.nextInt();
+
+        System.out.print("Türkçe Notunuzu Giriniz : ");
+        turkce = input.nextInt();
+
+        System.out.print("Müzik Notunuzu Giriniz : ");
+        muzik = input.nextInt();
+
+        int total=(mat+fizik+kimya+turkce+muzik);
+        int ort=(total/5);
+
+        if (ort >= 50){
+            System.out.println("Tebrikler Sınıfı Geçtiniz... :D");
+        }else {
+            System.out.println("Üzgünüm Sınıfta Kaldınız... :(");
+        }
+
+        System.out.println("Ortalamanız : "+ ort);
+    }
+}
