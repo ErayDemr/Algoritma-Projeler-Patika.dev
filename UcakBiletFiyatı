@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class UcakBiletUcretiHesaplama {
+    public static void main(String[] args) {
+        int yas,yolculuktipi;
+        double mesafeUcreti = 100,mesafe,inddirimliUcret,Tutar,GidisDonusTutari;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Ucak İle Gidilecek Mesafeyi Giriniz (km bazında giriniz) = ");
+        mesafe = input.nextDouble();
+
+        System.out.print("Yolcu Yaşını Giriniz = ");
+        yas = input.nextInt();
+
+
+        System.out.println("Sadece Tek Yön = 1\nGidiş-Dönüş = 2");
+        System.out.print("Yolculuk Türünü Seçiniz(yukarıdaki Bilgiye Göre Değer Giriniz...) = ");
+        yolculuktipi = input.nextInt();
+
+        if (yas < 12) {
+            inddirimliUcret =(mesafeUcreti*0.5);
+            
+        } else if ((yas >= 12) && (yas <= 24 )) {
+            inddirimliUcret = (mesafeUcreti*0.1);
+
+        }else {
+            inddirimliUcret = (mesafeUcreti*0.3);
+        }
+
+        Tutar = (mesafe*inddirimliUcret);
+
+        if (yolculuktipi == 2){
+            GidisDonusTutari = inddirimliUcret*0.2;
+            System.out.println("Gidiş-Dönüş olarak Girdiniz. Ödeme Tutarınız = "+ (mesafe*GidisDonusTutari)+"TL");
+
+        }else {
+            System.out.println("Tek Yön olarak girdiniz .Ödeme Tutarınız = "+ (inddirimliUcret*mesafe)+"TL");
+        }
+
+
+    }
+}
