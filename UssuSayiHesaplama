@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class UsluSayi {
+    public static void main(String[] args) {
+
+        int number,ussu;
+        int total = 1 ;
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Bir Değer Giriniz = ");
+        number = input.nextInt();
+
+        System.out.print("Üssü için bir değer giriniz = ");
+        ussu = input.nextInt();
+
+        for (int a = 1; a <= ussu; a++){
+        total *= number;
+        }
+        System.out.println("Cevap = "+total);
+
+
+    }
+}
