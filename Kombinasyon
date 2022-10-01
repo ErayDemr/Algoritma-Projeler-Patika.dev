@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Kombinasyon {
+    public static void main(String[] args) {
+
+        int n,r,f ;
+        int fak1 = 1 , fak2 = 1 , fak3 = 1;
+        Scanner input = new Scanner(System.in);
+        double Answer;
+        /* n! = fak1 , r! = fak2 , (n-r)! = fak3 , f=(n-r) */
+
+        System.out.print("Eleman Sayısını Giriniz = ");
+        n = input.nextInt();
+
+        System.out.print("Alt Gruplar Kaç Elamanlı Olsun = ");
+        r = input.nextInt();
+
+        for (int a = 1; a <= n; a++){
+            fak1 = fak1 * a ;
+        }
+        for (int b = 1; b <= r; b++){
+            fak2 = fak2 * b ;
+        }
+        f = n - r;
+        for (int c = 1 ; c <= f; c++){
+            fak3 = fak3 * c;
+        }
+        Answer = (fak1)/(fak2*fak3);
+        System.out.println(n+" Elemanlı grubun "+r+" Elemanlı alt grubun kombinasyonu = "+Answer);
+    }
+}
