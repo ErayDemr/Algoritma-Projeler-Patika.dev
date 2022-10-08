@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class enBuyukSayi {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("1. Değeri Giriniz : ");
+        int number1 = input.nextInt();
+
+        System.out.print("2. Değeri Giriniz : ");
+        int number2 = input.nextInt();
+
+        System.out.print("3. Değeri Giriniz : ");
+        int number3 = input.nextInt();
+
+        System.out.print("4. Değeri Giriniz : ");
+        int number4 = input.nextInt();
+
+        if ((number1 >= number2) && (number1 >= number3) && (number1 >= number4)){
+            System.out.println("En büyük sayı : "+ number1);
+        } else if ((number2 >= number1) && (number2 >= number3) && (number2 >= number4)) {
+            System.out.println("En büyük sayı : "+ number2);
+        } else if ((number3 >= number1) && (number3 >= number2) && (number3 >= number4)) {
+            System.out.println("En büyük sayı : "+ number3);
+        } else {
+            System.out.println("En Büyük Sayı : "+number4);
+        }
+
+
+        if ((number1 <= number2) && (number1 <= number3) && (number1 <= number4)){
+            System.out.println("En küçük sayı : "+ number1);
+        } else if ((number2 <= number1) && (number2 <= number3) && (number2 <= number4)) {
+            System.out.println("En küçük sayı : "+ number2);
+        } else if ((number3 <= number1) && (number3 <= number2) && (number3 <= number4)) {
+            System.out.println("En küçük sayı : "+ number3);
+        } else {
+            System.out.println("En küçük Sayı : "+ number4);
+        }
+
+    }
+
+}
